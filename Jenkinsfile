@@ -9,7 +9,8 @@ pipeline {
                     docker compose down || true
 
                     echo "Building and starting app..."
-                    docker compose up --build -d
+                    docker compose up --build
+                    docker ps
                 '''
             }
         }
